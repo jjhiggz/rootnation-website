@@ -1,11 +1,5 @@
-const { i18n } = require("./next-i18next.config");
+/** @type {import('next').NextConfig} */
 
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.BUNDLE_ANALYZE === "true",
-});
-
-const nextConfig = {
-  i18n,
+module.exports = {
+  reactStrictMode: true,
 };
-
-module.exports = withBundleAnalyzer(nextConfig);

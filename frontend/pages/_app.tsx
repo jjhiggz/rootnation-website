@@ -1,19 +1,7 @@
-import * as React from "react";
-import { appWithTranslation } from "next-i18next";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { ThemeProvider } from "@material-ui/core/styles";
+import '../styles/globals.css'
+import type { AppProps } from 'next/app'
 
-import { wrapper } from "@Redux";
-
-import theme from "@Definitions/Theme";
-
-const App = ({ Component, pageProps }: any) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
-};
-
-export default wrapper.withRedux(appWithTranslation(App));
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+export default MyApp
