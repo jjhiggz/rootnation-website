@@ -22,7 +22,9 @@ const SocialMediaButton = ({
   icon: IconDefinition;
   color: string;
 }) => (
-  <FontAwesomeIcon icon={icon} size={"3x"} className="ml-10" color={color} />
+  <a href={url}>
+    <FontAwesomeIcon icon={icon} size={"3x"} className="ml-10" color={color} />
+  </a>
 );
 
 const WideHeader = () => (
@@ -46,7 +48,11 @@ const WideHeader = () => (
             icon={faSpotify}
             color={Colors.spotifyGreen}
           />
-          <SocialMediaButton url="#" icon={faYoutube} color={Colors.ytRed} />
+          <SocialMediaButton
+            url="https://www.youtube.com/watch?v=KViIyIau1YM&list=UUSAtl7dqMUJsxP0wQrJ2TCw"
+            icon={faYoutube}
+            color={Colors.ytRed}
+          />
         </div>{" "}
         <div id="route-links">
           <RouteLink route="/" text="ABOUT" />
