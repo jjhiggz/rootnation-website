@@ -40,6 +40,7 @@ const Logo = ({ mobile }: { mobile: boolean }) => {
           {logoText.split("").map((letter, index) => {
             return (
               <TitleLetter
+                key={`logo-letter-${index}`}
                 letter={letter + (index > 3 ? "     " : ".")}
                 color={rainbowAssigner(index + startingIndex)}
                 size="3xl"
@@ -53,6 +54,7 @@ const Logo = ({ mobile }: { mobile: boolean }) => {
           {logoText.split("").map((letter, index) => {
             return (
               <TitleLetter
+                key={`logo-letter-${index}`}
                 letter={letter}
                 color={rainbowAssigner(index + startingIndex)}
                 size="3xl"

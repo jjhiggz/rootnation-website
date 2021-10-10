@@ -1,4 +1,4 @@
-export const rainbowAssigner = (index: number) => {
+export const rainbowAssigner = (index: number): string => {
   if (index > 6) {
     return rainbowAssigner(index - 7);
   }
