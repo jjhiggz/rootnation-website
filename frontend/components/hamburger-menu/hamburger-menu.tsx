@@ -44,7 +44,7 @@ export const HamburgerMenu = () => {
             <Logo mobile={true} />
           </div>
         </div>
-        <div id="routes-container">
+        <div id="routes-container" className="flex flex-col items-center">
           <RouteMenuItem
             text="About"
             onClick={() => {
